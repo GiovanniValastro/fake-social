@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({baseURL: 'https://gv-fake-social-api.onrender.com/'});
+const API = axios.create({baseURL: 'https://gv-fake-social-api.onrender.com/api'});
 
 API.interceptors.request.use(req => {
   if(localStorage.getItem('auth')) {
