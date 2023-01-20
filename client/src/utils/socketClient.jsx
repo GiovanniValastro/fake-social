@@ -18,7 +18,7 @@ export const SocketClient = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    const socket = io();
+    const socket = io('https://gv-fake-social-api.onrender.com');
     dispatch(socketState(socket))
     return () => socket.close()
   },[dispatch])
