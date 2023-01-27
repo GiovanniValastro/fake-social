@@ -1,4 +1,4 @@
-# fake-social# Fake Social project
+Fake Social project
 This is the project I made for the final project start2impact .
 
 ## :clipboard: Table of Content
