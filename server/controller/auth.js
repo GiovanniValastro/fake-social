@@ -35,7 +35,7 @@ const signIn = async (req, res) => {
 
   try {
 
-    const emailExist = await User.findOne({ email }).populate('friends', 'username avatar');
+    const emailExist = await User.findOne({ email }).populate('friends', 'username avatar friends');
     if(!emailExist) return res.status(404).json({message: 'Email or password is wrong'});
 
     const passwordValid = await bcrypt.compare(password, emailExist.password);
